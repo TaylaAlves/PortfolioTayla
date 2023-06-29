@@ -1,0 +1,281 @@
+/*Importei uma fonte do google Fonts para a NAV - de nome Inter*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Rowdies:wght@300&display=swap');
+
+/*Estilizando todos os elementos*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Estilizando o corpo do documento*/
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/*Estilizando a barra de navegação*/
+.nav-bar {
+    /*barra de navegação fixa, até o final da rolagem do header na página*/
+    position: sticky;
+    top: 0px;
+    /*cor do plano de fundo e algumas medidas n para o menu*/
+    background-color: #16161c;
+    box-shadow: 0px 10px #16161c;
+    height: 60px;
+    margin: 0px;
+    padding: 1.5rem 5rem;
+    padding-top: 1vh;
+    padding-bottom: 0vh;
+    /*conteúdo responsivo de acordo com o tamanho da tela*/
+    display: flex;
+    /*alinhando os âncoras a esquerda*/
+    justify-content: space-between;
+
+}
+
+/*Estilizando o logo " T " do NavBar*/
+#fotoicone {
+    width: 30px;
+    height: 30px;
+    background-color: dimgray;
+
+}
+
+/*Estilizando toda a <ul> (lista desordenada do menu horizontal) pela classe que a contem*/
+.nav-list ul {
+    /*Retirando os marcadores de item*/
+    list-style-type: none;
+    /*Acrescentando um display flex, para definir a direção dos itens da <ul> flexíveis, 
+    (assim, as âncoras crescerão ou diminuirão para se adequar no recipiente)*/
+    display: flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    text-indent: 10px;
+
+}
+
+/*Lista do Menu Hamburguer! */
+ul {
+    background-color: #16161c;
+    display: flex;
+    width: auto;
+    height: 55px;
+    align-items: center;
+}
+
+/*Estilizando todos os elementos HTML <li> (lista dos itens)*/
+.nav-item {
+    margin: 0 15px;
+    list-style-type: none;
+
+}
+
+/*Estilizando as âncoras*/
+.nav-link {
+    /*sem sublinhado*/
+    text-decoration: none;
+    /*tamanho responsivo*/
+    font-size: 1.2rem;
+    /*escrito em branco*/
+    color: white;
+    /*fonte importada do Google fonts, ou a Sans Serif em segundo caso*/
+    font-family: 'Inter', sans-serif;
+}
+
+/*Colocando um hover no menu horizontal*/
+#menuhorisonal:hover {
+    background-color: grey;
+    color: #000000;
+    height: 60px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Small devices (phones, 600px and down) = menu hamburguer*/
+/* Small devices (portrait tablets and large phones, 600px and up) = menu hamburguer*/
+/* Medium devices (landscape tablets, 768px and up) = menu horizontal*/
+/* Large devices (laptops/desktops, 992px and up) = menu horizontal */
+/* Extra large devices (large laptops and desktops, 1200px and up) = menu horizontal*/
+
+/*A baixo de 851px o menu irá mudar de horizontal para hamburguer*/
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+
+}
+
+@media screen and (max-width: 851px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-indent: 50px;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+
+    .mobile-menu li:hover {
+        background-color: darkgray;
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+
+    }
+
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+    .open {
+        display: block;
+    }
+}
+
+/*Imagem fixa ao fundo, com a propriedade z-index, e adaptada à tela*/
+#planodefundo {
+    width: 100%;
+    height: 620px;
+    z-index: -1;
+    position: fixed;
+    padding: 0px auto;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+/*Estilizando um botão para o Menu-Hamburguer*/
+button {
+    background-color: #16161c;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    background-color: #16161c;
+    padding: 20px 20px;
+    border-radius: 8px;
+}
+
+/*Essa imagem e os cabeçalhos se sobrepõem a imagem anterior e tem uma rolagem normal na página*/
+#avatar-tayla {
+    height: 350px;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    float: inline-start;
+
+}
+
+/*Cabeçalho principal do Header*/
+h1 {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 1px 2px black, 0 0 25px #000000, 0 0 5px #212629;
+    letter-spacing: 3px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+/*Cabeçalho secundario*/
+h2 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 1px 2px black, 0 0 25px #000000, 0 0 5px #212629;
+    letter-spacing: 3px;
+    text-align: left;
+    text-indent: 30px;
+}
+
+/*Conteúdo principal - Main*/
+.Escolaridade {
+    background-color: #aaa;;
+    width: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.Aperfeiçoamento {
+    background-color: #bbb;
+    width: auto;
+    box-sizing: border-box;
+
+}
+
+.Projetos {
+    background-color: #ccc;
+    width: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+
+}
+
+.Experiência_Profissional {
+    text-indent: 20px;
+    background-color: #ddd;
+    width: auto;
+
+}
+ 
+/*Paragrafos do conteúdo principal*/
+p {
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 1vp;
+    padding: 40px;
+}
+
+
+/*Footer*/
+.footer {
+    display: block;
+    overflow: auto;
+    background-color: #16161c;
+    height: 40px;
+    width: auto;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--Idioma-->
+<html lang="PT-BR">
+
+<head>
+
+    <!--Mapa de caracteres-->
+    <meta charset="UTF-8" />
+
+    <!--Mobile First-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Título-->
+    <title>TAYLADEV</title>
+
+    <!--Autor-->
+    <meta name="author" content="Tayla Alves Araújo" />
+
+    <!--Método de busca dos buscadores-->
+    <meta name="robots" content="index/follow" />
+    <meta name="keywords"
+        content="TaylaDev, Tayla Alves Araújo, Tayla Araújo, SENAI, TI, Front End, FRONT END, front end, desenvolvedor, DESENVOLVEDOR, WEBDEV, webdev, programador, PROGRAMADOR, Programador, PROGRAMAÇÃO, Desenvolvedor Web, criar um site" />
+    <meta name="description"
+        content="Este site foi desenvolvido pela aluna Tayla Alves Araújo, do curso de Front End Vespertino, do SENAI de Taguatinga - DF." />
+
+    <!--CSS Externo-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+
+    <!--Favicon-->
+    <link rel="icon" href="assets/Imagens/icone.png" alt="icone.png" type="image/png" />
+
+</head>
+
+<body>
+    <!--Cabeçalho do corpo da página-->
+    <header>
+        <nav class="nav-bar">
+            <!--Ícone-->
+            <div class="icone-flex">
+                <img src="assets/Imagens/icone.png" alt="Ícone" id="fotoicone" style="width: 60px; height: auto;">
+            </div>
+            <!--Âncoras para as sessões do conteúdo principal-->
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#P1" class="nav-link" id="menuhorisonal">Schooling </a></li>
+                    <li class="nav-item"><a href="#P2" class="nav-link" id="menuhorisonal">Improvement</a></li>
+                    <li class="nav-item"><a href="#P3" class="nav-link" id="menuhorisonal">Projects</a></li>
+                    <li class="nav-item"><a href="#P4" class="nav-link" id="menuhorisonal">Professional experience</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--O menu se tornará hamburguer para smartphones-->
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/Imagens/menu_white_36dp.svg"></button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#P1" class="nav-link">Schooling </a></li>
+                <li class="nav-item"><a href="#P2" class="nav-link">Improvement</a></li>
+                <li class="nav-item"><a href="#P3" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#P4" class="nav-link">Professional experience</a></li>
+            </ul>
+        </div>
+
+
+        <!--Estilizando uma parte inferior do Header, só para fins de design-->
+        <div id="div-container">
+            <!--Imagem fixa ao fundo, com a propriedade z-index, adaptada à tela, com width 100%-->
+            <img src="assets/Imagens/imagem6.png" alt="imagem6.png" id="planodefundo">
+            <!--Essa imagem e os cabeçalhos se sobrepõem a imagem anterior e tem uma rolagem normal da página-->
+            <img src="assets/Imagens/imagem10.png" alt="imagem10.png" id="avatar-tayla">
+            <h1>Hi! I'm Tayla Araújo,</h1>
+            <h2>a Junior Front End Developer.</h2>
+            <br>
+            <br>
+            <br>
+        </div>
+    </header>
+
+    <!--Java Script, para o menu hamburguer-->
+    <script src="assets/JS/CodeJS.js"></script>
+
+    <!--Conteúdo principal da página-->
+    <main>
+    <div class="row">
+        <div class="Escolaridade" class="column" id="P1">
+            <br>
+            <br>
+            <h2>Escolaridade</h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dolor, ac
+                iaculis purus. Vivamus vel aliquet erat, pharetra egestas turpis. Duis vulputate neque neque,
+                sed gravida tellus laoreet quis. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Suspendisse sit amet tellus a justo molestie dapibus quis ut
+                mauris. Donec ut tellus libero. In ligula dui, suscipit et nulla eget, facilisis pulvinar neque.
+                Maecenas semper accumsan felis eget fermentum. Aenean et imperdiet sapien. Fusce vulputate sem
+                sed felis feugiat porta. Proin ac massa ornare, pulvinar nibh sit amet, ultricies orci. Nulla
+                efficitur, massa sit amet condimentum imperdiet, felis mi pulvinar tellus, sit amet finibus
+                felis ligula non magna. Vestibulum quis laoreet urna. Sed eget suscipit dolor.
+
+                Pellentesque non auctor urna, sit amet condimentum dolor. Sed eleifend feugiat risus quis
+                fermentum. Proin venenatis finibus nisl, at hendrerit mauris vehicula ut. Nullam ipsum neque,
+                posuere nec eleifend sed, luctus vitae nibh. Ut sed tincidunt elit. Proin euismod tortor at
+                elementum laoreet. Proin condimentum eu turpis vel rhoncus. Nam egestas fermentum maximus.
+
+                In faucibus lacinia orci non malesuada. Aenean gravida sagittis interdum. Proin id nisi ac nisl
+                elementum hendrerit. Sed erat libero, ornare non tortor ac, feugiat imperdiet sem. Nunc feugiat
+                ipsum gravida, luctus diam sit amet, hendrerit sem. Sed rutrum elit eget faucibus egestas. Donec
+                euismod laoreet lorem eu accumsan. Pellentesque faucibus risus sed porta efficitur. Vivamus
+                lectus purus, ultrices et porta id, tempor ac sapien. Duis quis orci dolor. Pellentesque
+                condimentum eget leo sed blandit. Pellentesque in odio fringilla, elementum elit vitae,
+                scelerisque nisi. Quisque eu arcu non ligula cursus aliquam in quis magna. Integer at purus nec
+                dui tincidunt finibus sit amet a ante.
+
+                Morbi quis nisi vitae tortor varius congue. Aenean tempus tincidunt suscipit. Nam at ligula ac
+                orci ornare porta. Vivamus ut laoreet ante, eget imperdiet lorem. Fusce sit amet fermentum
+                ipsum. Curabitur a dictum ante. Nam ut finibus nibh, eu condimentum sapien. Aliquam cursus
+                aliquam erat ac tempus. Cras hendrerit dolor eget quam accumsan aliquam. Phasellus imperdiet ut
+                neque eu sollicitudin.
+
+                Fusce id est hendrerit, pretium nunc ac, laoreet felis. Vestibulum venenatis ut orci sed cursus.
+                Integer cursus mattis enim, sed sagittis velit porttitor feugiat. Vestibulum maximus libero
+                rutrum vestibulum viverra. Phasellus tempor sed quam nec suscipit. Ut pretium turpis id augue
+                volutpat, rutrum porttitor eros mollis. Nunc sapien ex, tristique ac cursus eu, vestibulum vitae
+                est.</p>
+        </div>
+
+        <div class="Aperfeiçoamento" class="column" id="P2">
+            <br>
+            <br>
+            <h2>Aperfeiçoamento</h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dolor, ac
+                iaculis purus. Vivamus vel aliquet erat, pharetra egestas turpis. Duis vulputate neque neque,
+                sed gravida tellus laoreet quis. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Suspendisse sit amet tellus a justo molestie dapibus quis ut
+                mauris. Donec ut tellus libero. In ligula dui, suscipit et nulla eget, facilisis pulvinar neque.
+                Maecenas semper accumsan felis eget fermentum. Aenean et imperdiet sapien. Fusce vulputate sem
+                sed felis feugiat porta. Proin ac massa ornare, pulvinar nibh sit amet, ultricies orci. Nulla
+                efficitur, massa sit amet condimentum imperdiet, felis mi pulvinar tellus, sit amet finibus
+                felis ligula non magna. Vestibulum quis laoreet urna. Sed eget suscipit dolor.
+
+                Pellentesque non auctor urna, sit amet condimentum dolor. Sed eleifend feugiat risus quis
+                fermentum. Proin venenatis finibus nisl, at hendrerit mauris vehicula ut. Nullam ipsum neque,
+                posuere nec eleifend sed, luctus vitae nibh. Ut sed tincidunt elit. Proin euismod tortor at
+                elementum laoreet. Proin condimentum eu turpis vel rhoncus. Nam egestas fermentum maximus.
+
+                In faucibus lacinia orci non malesuada. Aenean gravida sagittis interdum. Proin id nisi ac nisl
+                elementum hendrerit. Sed erat libero, ornare non tortor ac, feugiat imperdiet sem. Nunc feugiat
+                ipsum gravida, luctus diam sit amet, hendrerit sem. Sed rutrum elit eget faucibus egestas. Donec
+                euismod laoreet lorem eu accumsan. Pellentesque faucibus risus sed porta efficitur. Vivamus
+                lectus purus, ultrices et porta id, tempor ac sapien. Duis quis orci dolor. Pellentesque
+                condimentum eget leo sed blandit. Pellentesque in odio fringilla, elementum elit vitae,
+                scelerisque nisi. Quisque eu arcu non ligula cursus aliquam in quis magna. Integer at purus nec
+                dui tincidunt finibus sit amet a ante.
+
+                Morbi quis nisi vitae tortor varius congue. Aenean tempus tincidunt suscipit. Nam at ligula ac
+                orci ornare porta. Vivamus ut laoreet ante, eget imperdiet lorem. Fusce sit amet fermentum
+                ipsum. Curabitur a dictum ante. Nam ut finibus nibh, eu condimentum sapien. Aliquam cursus
+                aliquam erat ac tempus. Cras hendrerit dolor eget quam accumsan aliquam. Phasellus imperdiet ut
+                neque eu sollicitudin.
+
+                Fusce id est hendrerit, pretium nunc ac, laoreet felis. Vestibulum venenatis ut orci sed cursus.
+                Integer cursus mattis enim, sed sagittis velit porttitor feugiat. Vestibulum maximus libero
+                rutrum vestibulum viverra. Phasellus tempor sed quam nec suscipit. Ut pretium turpis id augue
+                volutpat, rutrum porttitor eros mollis. Nunc sapien ex, tristique ac cursus eu, vestibulum vitae
+                est.</p>
+        </div>
+
+        <div class="Projetos" class="column" id="P3">
+            <br>
+            <br>
+            <h2>Projetos</h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dolor, ac iaculis purus.
+                Vivamus vel aliquet erat, pharetra egestas turpis. Duis vulputate neque neque, sed gravida tellus
+                laoreet quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Suspendisse sit amet tellus a justo molestie dapibus quis ut mauris. Donec ut tellus libero. In ligula
+                dui, suscipit et nulla eget, facilisis pulvinar neque. Maecenas semper accumsan felis eget fermentum.
+                Aenean et imperdiet sapien. Fusce vulputate sem sed felis feugiat porta. Proin ac massa ornare, pulvinar
+                nibh sit amet, ultricies orci. Nulla efficitur, massa sit amet condimentum imperdiet, felis mi pulvinar
+                tellus, sit amet finibus felis ligula non magna. Vestibulum quis laoreet urna. Sed eget suscipit dolor.
+
+                Pellentesque non auctor urna, sit amet condimentum dolor. Sed eleifend feugiat risus quis fermentum.
+                Proin venenatis finibus nisl, at hendrerit mauris vehicula ut. Nullam ipsum neque, posuere nec eleifend
+                sed, luctus vitae nibh. Ut sed tincidunt elit. Proin euismod tortor at elementum laoreet. Proin
+                condimentum eu turpis vel rhoncus. Nam egestas fermentum maximus.
+
+                In faucibus lacinia orci non malesuada. Aenean gravida sagittis interdum. Proin id nisi ac nisl
+                elementum hendrerit. Sed erat libero, ornare non tortor ac, feugiat imperdiet sem. Nunc feugiat ipsum
+                gravida, luctus diam sit amet, hendrerit sem. Sed rutrum elit eget faucibus egestas. Donec euismod
+                laoreet lorem eu accumsan. Pellentesque faucibus risus sed porta efficitur. Vivamus lectus purus,
+                ultrices et porta id, tempor ac sapien. Duis quis orci dolor. Pellentesque condimentum eget leo sed
+                blandit. Pellentesque in odio fringilla, elementum elit vitae, scelerisque nisi. Quisque eu arcu non
+                ligula cursus aliquam in quis magna. Integer at purus nec dui tincidunt finibus sit amet a ante.
+
+                Morbi quis nisi vitae tortor varius congue. Aenean tempus tincidunt suscipit. Nam at ligula ac orci
+                ornare porta. Vivamus ut laoreet ante, eget imperdiet lorem. Fusce sit amet fermentum ipsum. Curabitur a
+                dictum ante. Nam ut finibus nibh, eu condimentum sapien. Aliquam cursus aliquam erat ac tempus. Cras
+                hendrerit dolor eget quam accumsan aliquam. Phasellus imperdiet ut neque eu sollicitudin.
+
+                Fusce id est hendrerit, pretium nunc ac, laoreet felis. Vestibulum venenatis ut orci sed cursus. Integer
+                cursus mattis enim, sed sagittis velit porttitor feugiat. Vestibulum maximus libero rutrum vestibulum
+                viverra. Phasellus tempor sed quam nec suscipit. Ut pretium turpis id augue volutpat, rutrum porttitor
+                eros mollis. Nunc sapien ex, tristique ac cursus eu, vestibulum vitae est.</p>
+        </div>
+
+        <div class="Experiência_Profissional" class="column" id="P4">
+            <br>
+            <br>
+            <h2>Experiência Profissional</h2>
+            <br>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum dolor, ac iaculis purus.
+                Vivamus vel aliquet erat, pharetra egestas turpis. Duis vulputate neque neque, sed gravida tellus
+                laoreet quis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                Suspendisse sit amet tellus a justo molestie dapibus quis ut mauris. Donec ut tellus libero. In ligula
+                dui, suscipit et nulla eget, facilisis pulvinar neque. Maecenas semper accumsan felis eget fermentum.
+                Aenean et imperdiet sapien. Fusce vulputate sem sed felis feugiat porta. Proin ac massa ornare, pulvinar
+                nibh sit amet, ultricies orci. Nulla efficitur, massa sit amet condimentum imperdiet, felis mi pulvinar
+                tellus, sit amet finibus felis ligula non magna. Vestibulum quis laoreet urna. Sed eget suscipit dolor.
+
+                Pellentesque non auctor urna, sit amet condimentum dolor. Sed eleifend feugiat risus quis fermentum.
+                Proin venenatis finibus nisl, at hendrerit mauris vehicula ut. Nullam ipsum neque, posuere nec eleifend
+                sed, luctus vitae nibh. Ut sed tincidunt elit. Proin euismod tortor at elementum laoreet. Proin
+                condimentum eu turpis vel rhoncus. Nam egestas fermentum maximus.
+
+                In faucibus lacinia orci non malesuada. Aenean gravida sagittis interdum. Proin id nisi ac nisl
+                elementum hendrerit. Sed erat libero, ornare non tortor ac, feugiat imperdiet sem. Nunc feugiat ipsum
+                gravida, luctus diam sit amet, hendrerit sem. Sed rutrum elit eget faucibus egestas. Donec euismod
+                laoreet lorem eu accumsan. Pellentesque faucibus risus sed porta efficitur. Vivamus lectus purus,
+                ultrices et porta id, tempor ac sapien. Duis quis orci dolor. Pellentesque condimentum eget leo sed
+                blandit. Pellentesque in odio fringilla, elementum elit vitae, scelerisque nisi. Quisque eu arcu non
+                ligula cursus aliquam in quis magna. Integer at purus nec dui tincidunt finibus sit amet a ante.
+
+                Morbi quis nisi vitae tortor varius congue. Aenean tempus tincidunt suscipit. Nam at ligula ac orci
+                ornare porta. Vivamus ut laoreet ante, eget imperdiet lorem. Fusce sit amet fermentum ipsum. Curabitur a
+                dictum ante. Nam ut finibus nibh, eu condimentum sapien. Aliquam cursus aliquam erat ac tempus. Cras
+                hendrerit dolor eget quam accumsan aliquam. Phasellus imperdiet ut neque eu sollicitudin.
+
+                Fusce id est hendrerit, pretium nunc ac, laoreet felis. Vestibulum venenatis ut orci sed cursus. Integer
+                cursus mattis enim, sed sagittis velit porttitor feugiat. Vestibulum maximus libero rutrum vestibulum
+                viverra. Phasellus tempor sed quam nec suscipit. Ut pretium turpis id augue volutpat, rutrum porttitor
+                eros mollis. Nunc sapien ex, tristique ac cursus eu, vestibulum vitae est.</p>
+        </div>
+    </div>
+    </main>
+    <!--Rodapé da página-->
+    <footer class="footer"></footer>
+
+</body>
+
+</html>
